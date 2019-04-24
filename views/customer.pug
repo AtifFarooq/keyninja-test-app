@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    h1 #{customer.firstName} #{customer.lastName}
+    h5 #{customer.email}
+    hr
+    a.btn.btn-primary(href="/customer/edit/" + customer._id) Edit
+    a.btn.btn-danger.ml-4(href="/customer/delete/" + customer._id) Delete

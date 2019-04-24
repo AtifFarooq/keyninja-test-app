@@ -1,0 +1,15 @@
+extends layout
+
+block content
+        h1 #{title}
+        form(method="POST", action='')
+            #form-group
+                label First Name:
+                input.form-control(name="firstName", type="text", value=customer.firstName)
+            #form-group.mt-3
+                label Last Name:
+                input.form-control(name="lastName", type="text", value=customer.lastName)
+            #form-group.mt-3
+                label Email:
+                input.form-control(name="email", type="text", value=customer.email)
+            input.btn.btn-primary.mt-4(type='submit', value="Submit")

@@ -1,0 +1,6 @@
+# Not including these in the commit
+
+node_modules
+.bowerrc
+package-lock.json
+public/bower_components/bootstrap
